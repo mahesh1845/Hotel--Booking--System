@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Hari Hotel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>🏨 Ram Hari</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to Ram Hari Hotel</h1>
+            <p>Comfort • Luxury • Best Service</p>
+            <button onclick="scrollToRooms()">Book Your Room</button>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking">
+        <h2>Book Your Stay</h2>
+
+        <div class="booking-form">
+            <input type="text" id="name" placeholder="Your Name">
+
+            <input type="date" id="checkin">
+
+            <input type="date" id="checkout">
+
+            <select id="room">
+                <option value="">Select Room</option>
+                <option value="2000">Single Room - ₹2000</option>
+                <option value="3500">Double Room - ₹3500</option>
+                <option value="5000">Deluxe Room - ₹5000</option>
+            </select>
+
+            <button onclick="bookRoom()">Book Now</button>
+        </div>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+
+        <div class="rooms">
+
+            <div class="room-card">
+                <div class="room-image">🛏️</div>
+                <h3>Single Room</h3>
+                <p>Perfect for one person.</p>
+                <h4>₹2,000 / night</h4>
+                <button onclick="selectRoom(2000)">Book Now</button>
+            </div>
+
+            <div class="room-card">
+                <div class="room-image">🛏️🛏️</div>
+                <h3>Double Room</h3>
+                <p>Comfortable room for two people.</p>
+                <h4>₹3,500 / night</h4>
+                <button onclick="selectRoom(3500)">Book Now</button>
+            </div>
+
+            <div class="room-card">
+                <div class="room-image">🏨✨</div>
+                <h3>Deluxe Room</h3>
+                <p>Luxury room with premium facilities.</p>
+                <h4>₹5,000 / night</h4>
+                <button onclick="selectRoom(5000)">Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>About Our Hotel</h2>
+        <p>
+            Ram hari Hotel provides comfortable rooms,
+            delicious food and excellent customer service.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>📞 +91 9876543210</p>
+        <p>📧 Ramhari@gmail.com</p>
+        <p>📍 Bhubaneswar, Odisha</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Ram Hari Hotel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
