@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+
+nav {
+    background: #222;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #cf6412;
+}
+
+/* Booking */
+
+.booking {
+    background: white;
+    padding: 40px 7%;
+    text-align: center;
+}
+
+.booking-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Rooms */
+
+#rooms {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+#rooms h2 {
+    margin-bottom: 30px;
+}
+
+.rooms {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.room-card {
+    background: white;
+    width: 300px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.room-image {
+    height: 180px;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.room-card h3 {
+    margin: 20px 0 10px;
+}
+
+.room-card p {
+    margin-bottom: 10px;
+}
+
+.room-card h4 {
+    margin-bottom: 15px;
+}
+
+/* About */
+
+.about {
+    background: white;
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.about p {
+    margin-top: 15px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
