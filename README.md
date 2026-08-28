@@ -24,7 +24,7 @@ CSS3 – Styling and responsive design
 JavaScript – User interactions and booking functionality
 📂 Project Structure
 
-Hotel-Booking-System/ │ ├── index.html ├── rooms.html ├── booking.html ├── login.html ├── register.html │ ├── css/ │ └── style.css │ ├── js/ │ └── script.js │ ├── images/ │ ├── hotel.jpg │ ├── room1.jpg │ ├── room2.jpg │ └── room3.jpg │ └── README.md
+Hotel-Booking-System/ │ ├── index.html ├── script.js ├── style.css ├── README.md
 
 ✨ Features
 
